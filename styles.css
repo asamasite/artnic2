@@ -134,15 +134,15 @@ p { margin: 0; }
 
 /* ---------- Первый экран ---------- */
 .hero { position: relative; height: clamp(720px, calc(100svh - var(--hdr-h)), 780px); overflow: visible; background: #f7f4f2; color: var(--on-light); }
-.hero__backdrop { position: absolute; top: 0; bottom: 0; left: -8%; width: 112%; height: 100%; max-width: none; object-fit: cover; object-position: 44% 42%; filter: brightness(.9) contrast(1.07) saturate(1.03); }
-.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.97) 29%, rgba(255,255,255,.64) 38%, rgba(255,255,255,0) 45%, rgba(255,255,255,0) 100%); }
+.hero__backdrop { position: absolute; top: 0; right: 0; bottom: 0; left: auto; width: auto; height: 100%; max-width: none; object-fit: contain; filter: brightness(.9) contrast(1.07) saturate(1.03); }
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.99) 25%, rgba(255,255,255,.94) 33%, rgba(255,255,255,.55) 41%, rgba(255,255,255,0) 48%, rgba(255,255,255,0) 100%); }
 .hero__inner { position: relative; z-index: 1; width: var(--shell); height: 100%; margin-inline: auto; padding: clamp(58px, 7vh, 76px) 0 100px; display: flex; align-items: flex-start; }
 .hero__copy { width: min(620px, 50%); }
 .hero h1 { max-width: 620px; margin-bottom: 22px; color: var(--on-light); font-size: clamp(48px, 4.45vw, 68px); font-weight: 400; line-height: 1; letter-spacing: -.052em; }
 .hero h1 strong { color: var(--peach); font-weight: 600; }
 .hero__lead { max-width: 43ch; color: var(--ash); font-size: clamp(16px, 1.25vw, 19px); line-height: 1.58; }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 30px; }
-.hero__facts { position: absolute; left: 0; bottom: -30px; width: min(770px, 68%); min-height: 116px; display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; padding: 14px 10px; border: 1px solid rgba(109,18,38,.1); border-radius: 16px; background: rgba(255,252,250,.96); backdrop-filter: blur(10px); }
+.hero__facts { position: absolute; left: 0; bottom: 28px; width: min(770px, 68%); min-height: 116px; display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; padding: 14px 10px; border: 1px solid rgba(109,18,38,.1); border-radius: 16px; background: rgba(255,252,250,.96); backdrop-filter: blur(10px); }
 .hero__facts .fact { min-width: 0; padding: 0 18px; border-right: 1px solid var(--marble); }
 .hero__facts .fact:last-child { border-right: 0; }
 .hero__facts .fact b { display: block; color: var(--peach); font-size: clamp(16px, 1.45vw, 21px); font-weight: 600; letter-spacing: -.035em; line-height: 1.15; }
@@ -179,7 +179,7 @@ p { margin: 0; }
 .fact span { display: block; margin-top: 8px; font-size: 12.5px; line-height: 1.5; color: var(--ash); }
 
 /* ---------- Направления (карусель карточек) ---------- */
-.dirs { padding: calc(var(--sp) + 30px) 0 var(--sp); }
+.dirs { padding-block: var(--sp); }
 .proc__track {
   display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory;
   overscroll-behavior-inline: contain; scrollbar-width: none;
@@ -429,8 +429,8 @@ p { margin: 0; }
   .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
   .hdr__call { display: none; }
   .about__grid, .why__grid, .faq__grid, .promo__grid, .contacts__grid, .page-hero__grid, .feature__grid { grid-template-columns: 1fr; gap: 40px; }
-  .hero__backdrop { left: -6%; width: 108%; object-position: 46% 42%; }
-  .hero::after { background: linear-gradient(90deg, rgba(255,255,255,.99) 0%, rgba(255,255,255,.95) 45%, rgba(255,255,255,.2) 72%, transparent 90%); }
+  .hero__backdrop { right: 0; left: auto; width: auto; }
+  .hero::after { background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,.98) 38%, rgba(255,255,255,.72) 52%, rgba(255,255,255,.18) 72%, transparent 88%); }
   .hero__inner { padding-top: 58px; }
   .hero__copy { width: min(600px, 66%); }
   .hero h1 { max-width: 15ch; }
@@ -448,7 +448,7 @@ p { margin: 0; }
 @media (max-width: 640px) {
   :root { --shell: calc(100% - 28px); }
   .hero { height: auto; min-height: auto; padding-top: 250px; }
-  .hero__backdrop { left: 0; width: 100%; height: 300px; object-position: 56% 38%; filter: brightness(.94) contrast(1.04); }
+  .hero__backdrop { right: 0; left: 0; width: 100%; height: 300px; object-fit: cover; object-position: 56% 38%; filter: brightness(.94) contrast(1.04); }
   .hero::after { background: linear-gradient(180deg, rgba(255,255,255,0) 80px, rgba(255,255,255,.2) 160px, #fff 300px); }
   .hero__inner { min-height: 0; padding: 30px 0 22px; display: block; }
   .hero__copy { width: 100%; }
