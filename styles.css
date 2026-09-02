@@ -238,6 +238,27 @@ p { margin: 0; }
 .wslider-dots button { width: 7px; height: 7px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.5); cursor: pointer; transition: background .2s, transform .2s; }
 .wslider-dots button.active { background: var(--gold); transform: scale(1.4); }
 
+/* ---------- Лечение в фотографиях ---------- */
+.cases__grid {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-auto-rows: clamp(190px, 20vw, 280px);
+  gap: 12px; margin-top: clamp(28px, 4vw, 46px);
+}
+.case { position: relative; margin: 0; overflow: hidden; border-radius: 14px; background: var(--mist); cursor: zoom-in; }
+.case--wide { grid-column: span 2; }
+.case--portrait { grid-row: span 2; }
+.case img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s var(--ease); }
+.case:hover img { transform: scale(1.025); }
+.case figcaption {
+  position: absolute; inset: auto 0 0; padding: 42px 16px 14px;
+  background: linear-gradient(transparent, rgba(30,9,15,.78)); color: #fff;
+  font-size: 12px; line-height: 1.4;
+}
+.service-photos { padding-bottom: var(--sp); }
+.service-photos__grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr 1.2fr; gap: 10px; }
+.service-photos figure { margin: 0; height: clamp(190px, 22vw, 310px); overflow: hidden; border-radius: 12px; cursor: zoom-in; }
+.service-photos img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s var(--ease); }
+.service-photos figure:hover img { transform: scale(1.025); }
+
 /* ---------- О клинике ---------- */
 .about__grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 7vw; align-items: center; }
 .about__media { position: relative; margin: 0; }
@@ -435,6 +456,8 @@ p { margin: 0; }
   .head { flex-direction: column; align-items: flex-start; gap: 18px; }
   .faq__aside { position: static; }
   .about__media::before, .feature__media::before { inset: -14px 14px 14px -14px; }
+  .cases__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: clamp(210px, 42vw, 320px); }
+  .service-photos__grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
   :root { --shell: calc(100% - 28px); }
@@ -444,4 +467,10 @@ p { margin: 0; }
   .fact { border-right: 0; border-bottom: 1px solid var(--marble); }
   .fact:last-child { border-bottom: 0; }
   .cta__actions, .contacts__actions { flex-direction: column; align-items: stretch; }
+  .cases__grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 190px; gap: 8px; }
+  .case--wide { grid-column: span 2; }
+  .case--portrait { grid-row: span 1; }
+  .case figcaption { padding: 34px 11px 10px; font-size: 10.5px; }
+  .service-photos__grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .service-photos figure { height: 180px; }
 }
