@@ -72,32 +72,35 @@
       </div>
     </section>
 
-    <section class="dirs section surf surf--paper" id="directions">
+    <section class="dirs section surf surf--paper" id="directions" data-strip>
       <div class="shell">
-        <div class="head">
-          <div>
+        <div class="head dirs__head">
+          <div class="dirs__heading">
             <p class="eyebrow">Направления клиники</p>
-            <h2 class="h2">От профилактики <em>до восстановления</em> зубного ряда</h2>
+            <h2 class="h2">Все этапы лечения — <em>в одной клинике</em></h2>
+            <p class="dirs__summary">Комплексный подход, современные технологии и врачи-эксперты в каждом направлении.</p>
           </div>
-          <p class="head__lead">Лечение, ортодонтия, хирургия, имплантация, протезирование и эстетическая стоматология. Для диагностики проводим рентгенографию.</p>
+          <div class="dirs__aside">
+            <p class="head__lead">Врачи разных специализаций работают по единому плану лечения, чтобы добиться предсказуемого и долговременного результата.</p>
+            <div class="dirs__controls">
+              <a class="link" href="services.html">Все услуги <span>→</span></a>
+              <span class="rev-nav">
+                <button type="button" data-prev aria-label="Предыдущие направления"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+                <button type="button" data-next aria-label="Следующие направления"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="proc" data-strip>
+        <div class="proc">
           <div class="proc__track js-track" tabindex="0" aria-label="Направления клиники">
-            <a class="proc__card" href="services.html"><span class="proc__num">01</span><h3 class="proc__name">Лечение зубов</h3><p class="proc__text">Кариес, пломбирование, эндодонтия под увеличением, лечение дёсен и периодонтита.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">02</span><h3 class="proc__name">Гигиена и отбеливание</h3><p class="proc__text">Ультразвук + Air Flow на аппарате NSK, полировка, фторирование. Отбеливание Opalescence.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">03</span><h3 class="proc__name">Исправление прикуса</h3><p class="proc__text">Консультация ортодонта, брекет-системы разных типов и элайнеры с цифровым 3D-планом.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">04</span><h3 class="proc__name">Хирургическая стоматология</h3><p class="proc__text">Удаление зубов любой сложности, в том числе зубов мудрости. Пластика десны.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">05</span><h3 class="proc__name">Имплантация</h3><p class="proc__text">Имплантация всех видов — «всё на 4», «всё на 6». Костная пластика и синус-лифтинг.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">06</span><h3 class="proc__name">Протезирование</h3><p class="proc__text">Циркониевые и металлокерамические коронки, виниры, восстановление разрушенных зубов.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">07</span><h3 class="proc__name">Эстетическая стоматология</h3><p class="proc__text">Виниры и художественная реставрация, подбор формы и цвета зуба с прозрачным краем.</p><span class="proc__more">Смотреть услуги</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">08</span><h3 class="proc__name">Диагностика</h3><p class="proc__text">Осмотр с фотопротоколом, рентгенография и 3D-снимки, первичная консультация с планом.</p><span class="proc__more">Смотреть услуги</span></a>
-          </div>
-          <div class="proc__foot">
-            <a class="link" href="services.html">Все услуги <span>↗</span></a>
-            <span class="rev-nav">
-              <button type="button" data-prev aria-label="Предыдущие"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
-              <button type="button" data-next aria-label="Следующие"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
-            </span>
+            <a class="proc__card proc__card--featured" href="services.html"><span class="proc__num">01</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Лечение зубов</h3><p class="proc__text">Терапия кариеса, лечение каналов, реставрации и лечение дёсен под увеличением.</p><span class="proc__more">Под увеличением</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">02</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Гигиена и отбеливание</h3><p class="proc__text">Профессиональная гигиена, Air Flow, полировка и безопасное отбеливание.</p><span class="proc__more">Air Flow + NSK</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">03</span><span class="proc__icon proc__icon--braces" aria-hidden="true"></span><h3 class="proc__name">Исправление прикуса</h3><p class="proc__text">Брекет-системы и элайнеры для детей и взрослых с цифровым 3D-планом.</p><span class="proc__more">Брекеты и элайнеры</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">04</span><span class="proc__icon proc__icon--surgery" aria-hidden="true"></span><h3 class="proc__name">Хирургическая стоматология</h3><p class="proc__text">Удаление зубов любой сложности, в том числе зубов мудрости.</p><span class="proc__more">Удаление зубов</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">05</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Имплантация</h3><p class="proc__text">Одномоментная имплантация, «всё на 4» и «всё на 6», костная пластика.</p><span class="proc__more">Варианты имплантации</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">06</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Протезирование</h3><p class="proc__text">Коронки, виниры и восстановление разрушенных зубов в собственной лаборатории.</p><span class="proc__more">Коронки и виниры</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">07</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Эстетическая стоматология</h3><p class="proc__text">Художественная реставрация, подбор естественной формы и оттенка зубов.</p><span class="proc__more">Эстетика улыбки</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">08</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Диагностика</h3><p class="proc__text">Осмотр с фотопротоколом, рентгенография и 3D-снимки при необходимости.</p><span class="proc__more">План лечения</span></a>
           </div>
         </div>
       </div>

@@ -64,7 +64,8 @@
     if (!track) return;
     const step = () => {
       const c = track.firstElementChild;
-      return c ? (c.getBoundingClientRect().width + 16) * (wrap.dataset.strip === 'wide' ? 1 : 2) : 300;
+      const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+      return c ? (c.getBoundingClientRect().width + gap) * (wrap.dataset.strip === 'wide' ? 1 : 2) : 300;
     };
     wrap.querySelectorAll('[data-prev]').forEach((b) => b.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' })));
     wrap.querySelectorAll('[data-next]').forEach((b) => b.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' })));
