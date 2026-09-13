@@ -50,4 +50,4 @@
   @keyframes directions-photo { from { transform: scale(1.08); } to { transform: scale(1); } }
   @keyframes directions-card { from { opacity: 0; transform: translateY(22px) scale(.97); } to { opacity: 1; transform: none; } }
 }
-@media (prefers-reduced-motion:reduce) { .visit-intro .preloader { display: none; } .motion-reveal,.directions-reveal { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion:reduce) { .visit-intro .preloader { animation: none; } .motion-reveal,.directions-reveal { opacity: 1; transform: none; } }

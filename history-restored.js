@@ -2,6 +2,15 @@
   const headerState=()=>document.body.classList.toggle('header-scrolled',scrollY>80);
   addEventListener('scroll',headerState,{passive:true});headerState();
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-doctor-carousel]').forEach(root=>{
+    const track=root.querySelector('.team__grid'), cards=[...track.children], prev=root.querySelector('[data-doctor-prev]'), next=root.querySelector('[data-doctor-next]'), count=root.querySelector('[data-doctor-count]');
+    const step=()=>cards[0].getBoundingClientRect().width+(parseFloat(getComputedStyle(track).gap)||0);
+    const update=()=>{const index=Math.min(cards.length-1,Math.round(track.scrollLeft/step()));count.textContent=String(index+1).padStart(2,'0')+' / '+String(cards.length).padStart(2,'0');prev.disabled=track.scrollLeft<2;next.disabled=track.scrollLeft>=track.scrollWidth-track.clientWidth-2;};
+    const go=direction=>track.scrollBy({left:direction*step(),behavior:reduce?'auto':'smooth'});
+    prev.addEventListener('click',()=>go(-1));next.addEventListener('click',()=>go(1));
+    track.addEventListener('scroll',update,{passive:true});addEventListener('resize',update,{passive:true});
+    track.addEventListener('keydown',e=>{if(e.target===track&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();go(e.key==='ArrowRight'?1:-1);}});update();
+  });
   const progress = document.querySelector('.scrollprog');
   if (progress) {
     let frame = 0;
