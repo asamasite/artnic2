@@ -1,0 +1,53 @@
+.preloader { display: none; }
+.visit-intro .preloader { position: fixed; inset: 0; z-index: 1000; display: grid; place-items: center; background: radial-gradient(ellipse at 50% 45%,#531426,#260610 75%); color: #e0c483; pointer-events: none; animation: preloader-exit .45s .85s cubic-bezier(.65,0,.35,1) forwards; }
+.preloader__content { display: grid; justify-items: center; gap: 17px; animation: hero-arrive .5s ease-out both; }
+.preloader svg { width: 90px; height: 90px; }
+.preloader path { fill: none; stroke: currentColor; stroke-width: 1.25; stroke-linecap: round; stroke-dasharray: 300; animation: preloader-draw .8s ease-out both; }
+.preloader span { font-size: 12px; letter-spacing: .3em; }
+.preloader i { width: 100px; height: 1px; background: #e0c483; transform-origin: left; animation: preloader-progress .85s ease-in-out both; }
+@keyframes preloader-exit { to { opacity: 0; visibility: hidden; transform: translateY(-12px); } }
+@keyframes preloader-draw { from { stroke-dashoffset: 300; } to { stroke-dashoffset: 0; } }
+@keyframes preloader-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion:no-preference) {
+  .motion-reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease,transform .85s cubic-bezier(.2,.7,.2,1); transition-delay: var(--motion-delay,0ms); }
+  .motion-reveal.is-visible { opacity: 1; transform: none; }
+  .btn,.rev-nav button { transition: transform .3s ease,background .3s ease,box-shadow .3s ease; }
+  body[data-page="home"] .reference-scene { transform-origin: 70% 55%; animation: hero-photo-settle 3s cubic-bezier(.16,.55,.32,1) both; }
+  body[data-page="home"] .hero h1 { animation: hero-title-unfold 1.35s .08s cubic-bezier(.16,1,.3,1) both; }
+  body[data-page="home"] .hero h1 em { display: inline-block; animation: hero-accent-unfold 1.5s .35s cubic-bezier(.16,1,.3,1) both; }
+  .hero__lead { animation: hero-arrive 1.2s .55s both; }
+  .hero__actions { animation: hero-arrive 1.2s .75s both; }
+  .hero__facts.benefits-entered .fact { animation: benefit-arrive 1.15s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--benefit-delay,0s); }
+  .hero__facts .fact:nth-child(2) { --benefit-delay: .18s; }
+  .hero__facts .fact:nth-child(3) { --benefit-delay: .36s; }
+  .hero__facts.benefits-entered .fact__icon { animation: benefit-ring 1.4s cubic-bezier(.16,1,.3,1) both; animation-delay: calc(var(--benefit-delay,0s) + .12s); }
+  .hero__facts.benefits-entered .fact__icon svg { animation: benefit-symbol 1.3s ease both; animation-delay: calc(var(--benefit-delay,0s) + .3s); }
+  .hero__facts::after { content: ''; pointer-events: none; position: absolute; inset: 0; background: linear-gradient(110deg,transparent 35%,rgba(255,255,255,.12) 49%,transparent 63%); background-size: 300% 100%; opacity: 0; }
+  .hero__facts.benefits-entered::after { animation: benefit-light-pass 2.4s .4s ease-out both; }
+  .directions-reveal { opacity: 0; transition: opacity .85s ease; }
+  .directions-visible { opacity: 1; }
+  .dirs__heading.directions-visible,.dirs .head__lead.directions-visible,.dirs__story.directions-visible { animation: hero-arrive 1s cubic-bezier(.16,1,.3,1) both; }
+  .dirs__cabinet.directions-visible img { animation: directions-photo 1.4s cubic-bezier(.16,1,.3,1) both; }
+  .dirs .proc.directions-visible .proc__card { animation: directions-card .9s cubic-bezier(.16,1,.3,1) both; }
+  .dirs .proc.directions-visible .proc__card:nth-child(2) { animation-delay: .12s; }
+  .dirs .proc.directions-visible .proc__card:nth-child(3) { animation-delay: .24s; }
+  .dirs .proc.directions-visible .proc__card:nth-child(4) { animation-delay: .36s; }
+  .visit-intro .reference-scene { animation-delay: .85s; }
+  .visit-intro .hero h1 { animation-delay: .9s; }
+  .visit-intro .hero h1 em { animation-delay: 1.1s; }
+  .visit-intro .hero__lead { animation-delay: 1.2s; }
+  .visit-intro .hero__actions { animation-delay: 1.35s; }
+  .clinic-carousel img { transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+  @media (hover:hover) { .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(50,5,20,.18); } .btn:active { transform: none; } .rev-nav button:hover { transform: scale(1.08); } .clinic-carousel button:hover img { transform: scale(1.035); } }
+  @keyframes hero-arrive { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes hero-photo-settle { from { transform: scale(1.16); } to { transform: scale(1); } }
+  @keyframes hero-title-unfold { from { opacity: 0; transform: translateY(36px); clip-path: inset(0 0 100% 0); } to { opacity: 1; transform: none; clip-path: inset(0); } }
+  @keyframes hero-accent-unfold { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: none; } }
+  @keyframes benefit-arrive { from { opacity: 0; transform: translateY(32px); filter: blur(5px); } to { opacity: 1; transform: none; filter: blur(0); } }
+  @keyframes benefit-ring { from { transform: scale(.65) rotate(-20deg); box-shadow: 0 0 0 14px rgba(255,255,255,.08); } to { transform: none; box-shadow: 0 0 0 0 transparent; } }
+  @keyframes benefit-symbol { from { opacity: 0; stroke-dasharray: 140; stroke-dashoffset: 140; } to { opacity: 1; stroke-dasharray: 140; stroke-dashoffset: 0; } }
+  @keyframes benefit-light-pass { 0% { opacity: 0; background-position: 100% 0; } 20% { opacity: 1; } 100% { opacity: 0; background-position: 0% 0; } }
+  @keyframes directions-photo { from { transform: scale(1.08); } to { transform: scale(1); } }
+  @keyframes directions-card { from { opacity: 0; transform: translateY(22px) scale(.97); } to { opacity: 1; transform: none; } }
+}
+@media (prefers-reduced-motion:reduce) { .visit-intro .preloader { display: none; } .motion-reveal,.directions-reveal { opacity: 1; transform: none; } }

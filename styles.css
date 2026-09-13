@@ -39,7 +39,7 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0; background: var(--paper); color: var(--on-light);
-  font: 400 16px/1.65 Manrope, system-ui, Arial, sans-serif;
+  font: 400 16px/1.65 Manrope, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased; overflow-x: clip;
 }
 body.menu-open { overflow: hidden; }

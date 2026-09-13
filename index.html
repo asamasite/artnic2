@@ -23,68 +23,48 @@
   <meta name="twitter:description" content="Лечение зубов, ортодонтия, хирургия, имплантология и протезирование в Краснодаре.">
   <meta name="twitter:image" content="https://artnic.asama.site/og-image.png">
 
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/images/hero.png" as="image">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="icon" href="assets/favicon.svg?v=restored1" type="image/svg+xml">
+  <link rel="preload" href="assets/images/hero-interior-reference.webp" as="image">
+  <link rel="stylesheet" href="styles.css?v=restored1">
+  <link rel="stylesheet" href="history-restored.css?v=3">
+  <link rel="stylesheet" href="restored-motion.css?v=1">
+  <script src="visit-intro.js"></script>
+  <script src="script.js?v=restored1" defer></script>
+  <script src="history-restored.js?v=2" defer></script>
 </head>
-<body data-page="home">
+<body data-page="home" class="reference-layout">
+  <div class="preloader" aria-hidden="true"><div class="preloader__content"><svg viewBox="0 0 90 90"><path d="M18 62 55 17 38 71M24 48l44-10M49 55c5-13 13-27 20-20 6 6-2 25-7 42"/></svg><span>ART-NIK CLINIC</span><i></i></div></div>
+  <div class="scrollprog" aria-hidden="true"></div>
   <a class="skip" href="#main">Перейти к содержанию</a>
 
   <header class="hdr">
     <div class="hdr__inner">
       <a class="brand" href="index.html" aria-label="Арт-Ник — на главную">
-        <span class="brand__mark" aria-hidden="true">АН</span>
+        <img class="brand__logo" src="assets/images/AN.png" alt="" width="60" height="60">
         <span class="brand__text"><b>Арт-Ник</b><small>стоматология · Краснодар</small></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span><span class="vh">Меню</span></button>
-      <nav class="nav" id="nav" aria-label="Основная навигация">
-        <a href="services.html">Услуги</a>
-        <a href="#about">О клинике</a>
-        <a href="#doctors">Врачи</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#faq">Вопросы</a>
-        <a href="#contacts">Контакты</a>
-      </nav>
-      <a class="hdr__call" href="tel:+78612026171" aria-label="Записаться по телефону +7 861 202-61-71"><small>Записаться</small><span>+7 861 202-61-71</span></a>
+      <nav class="nav" id="nav" aria-label="Основная навигация"><a href="#about">О клинике</a><a href="services.html">Услуги</a><a href="#doctors">Врачи</a><a href="services.html">Цены</a><a href="#faq">Пациентам</a><a href="#contacts">Контакты</a></nav>
+      <div class="hdr__contacts"><a href="tel:+78612026171">+7 (861) 202-61-71</a><a href="#contacts">Краснодар, ул. Архитектора Петина, 18/1</a></div><a class="hdr__call" href="#contacts">Записаться</a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <img class="hero__backdrop" src="assets/images/hero.png" alt="Интерьер клиники Арт-Ник с ресепшеном и стоматологическим креслом" width="1536" height="1024">
-      <div class="hero__inner">
-        <div class="hero__copy">
-          <p class="eyebrow">Краснодар · клиника эстетической стоматологии</p>
-          <h1>Лечим зубы<br><strong>и создаём улыбки</strong><br>по единому плану</h1>
-          <p class="hero__lead">Терапия, ортодонтия, хирургия, имплантация и протезирование — в одной клинике и по единому плану.</p>
-          <div class="hero__actions">
-            <a class="btn" href="#contacts">Записаться на консультацию</a>
-            <a class="btn btn--line" href="services.html">Все услуги <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-        <div class="hero__facts" aria-label="Коротко о клинике">
-          <div class="fact"><b>с 2016 года</b><span>собственная зуботехническая лаборатория</span></div>
-          <div class="fact"><b>7 врачей</b><span>терапия, ортодонтия, хирургия, имплантация</span></div>
-          <div class="fact"><b>4 года подряд</b><span>«Хорошее место» на Яндекс Картах</span></div>
-          <div class="fact"><b>до 12 месяцев</b><span>рассрочка на лечение</span></div>
-        </div>
-      </div>
-    </section>
+    <section class="hero"><div class="hero__inner"><div class="hero__copy"><h1>Воплощаем мечты<br><em>о красивой улыбке</em><br>в реальность</h1><p class="hero__lead">Современная стоматология, точная диагностика и забота о вашем комфорте.</p><div class="hero__actions"><a class="btn" href="#contacts">Записаться на консультацию</a><a class="btn btn--line" href="services.html">Посмотреть услуги</a></div></div><figure class="hero__scene"><div class="reference-scene" role="img" aria-label="Интерьер Арт-Ник: ресепшен с мраморной стойкой, бордовые панели и зона ожидания"></div></figure><div class="hero__facts" aria-label="Преимущества клиники"><div class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="m20 4 5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2Z"/></svg></span><span class="fact__text"><b>4 года подряд</b><small>«Хорошее место» · Яндекс Карты</small></span></div><div class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M14 4h12m-9 0v12L7 31a3 3 0 0 0 3 5h20a3 3 0 0 0 3-5L23 16V4M12 25h16"/><circle cx="20" cy="30" r="1"/></svg></span><span class="fact__text"><b>Собственная лаборатория</b><small>Контроль качества на каждом этапе</small></span></div><div class="fact"><span class="fact__icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 3 5 9v11c0 9 15 17 15 17s15-8 15-17V9Z"/><path d="m12 20 5 5 11-11"/></svg></span><span class="fact__text"><b>10 лет гарантии</b><small>На коронки и виниры</small></span></div></div></div></section>
 
-    <section class="dirs section surf surf--paper" id="directions" data-strip>
-      <div class="shell">
+    <section class="dirs section surf surf--paper" id="directions" data-strip="wide">
+      <div class="shell"><figure class="dirs__cabinet"><img src="assets/images/directions-cabinet-reference.webp" alt="Кабинет Арт-Ник с бордовым стоматологическим креслом" width="1536" height="1024" loading="lazy"></figure><a class="dirs__story" href="#about"><span class="dirs__story-title">Технологии,<br>которые создают<br>улыбки</span><span class="dirs__story-line"></span><span class="dirs__story-text">Забота в каждой<br>детали</span><span class="dirs__story-arrow" aria-hidden="true">→</span></a>
         <div class="head dirs__head">
           <div class="dirs__heading">
             <p class="eyebrow">Направления клиники</p>
             <h2 class="h2">Все этапы лечения — <em>в одной клинике</em></h2>
-            <p class="dirs__summary">Комплексный подход, современные технологии и врачи-эксперты в каждом направлении.</p>
+            
           </div>
           <div class="dirs__aside">
-            <p class="head__lead">Врачи разных специализаций работают по единому плану лечения, чтобы добиться предсказуемого и долговременного результата.</p>
+            <p class="head__lead">Врачи работают вместе по единому плану — от диагностики до восстановления улыбки.</p>
             <div class="dirs__controls">
               <a class="link" href="services.html">Все услуги <span>→</span></a>
-              <span class="rev-nav">
+              <span class="dirs__note">Современная стоматология<br>для вашей уверенности</span><span class="rev-nav">
                 <button type="button" data-prev aria-label="Предыдущие направления"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
                 <button type="button" data-next aria-label="Следующие направления"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
               </span>
@@ -93,23 +73,23 @@
         </div>
         <div class="proc">
           <div class="proc__track js-track" tabindex="0" aria-label="Направления клиники">
-            <a class="proc__card proc__card--featured" href="services.html"><span class="proc__num">01</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Лечение зубов</h3><p class="proc__text">Терапия кариеса, лечение каналов, реставрации и лечение дёсен под увеличением.</p><span class="proc__more">Под увеличением</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">02</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Гигиена и отбеливание</h3><p class="proc__text">Профессиональная гигиена, Air Flow, полировка и безопасное отбеливание.</p><span class="proc__more">Air Flow + NSK</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">03</span><span class="proc__icon proc__icon--braces" aria-hidden="true"></span><h3 class="proc__name">Исправление прикуса</h3><p class="proc__text">Брекет-системы и элайнеры для детей и взрослых с цифровым 3D-планом.</p><span class="proc__more">Брекеты и элайнеры</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">04</span><span class="proc__icon proc__icon--surgery" aria-hidden="true"></span><h3 class="proc__name">Хирургическая стоматология</h3><p class="proc__text">Удаление зубов любой сложности, в том числе зубов мудрости.</p><span class="proc__more">Удаление зубов</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">05</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Имплантация</h3><p class="proc__text">Одномоментная имплантация, «всё на 4» и «всё на 6», костная пластика.</p><span class="proc__more">Варианты имплантации</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">06</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Протезирование</h3><p class="proc__text">Коронки, виниры и восстановление разрушенных зубов в собственной лаборатории.</p><span class="proc__more">Коронки и виниры</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">07</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Эстетическая стоматология</h3><p class="proc__text">Художественная реставрация, подбор естественной формы и оттенка зубов.</p><span class="proc__more">Эстетика улыбки</span></a>
-            <a class="proc__card" href="services.html"><span class="proc__num">08</span><span class="proc__icon" aria-hidden="true"></span><h3 class="proc__name">Диагностика</h3><p class="proc__text">Осмотр с фотопротоколом, рентгенография и 3D-снимки при необходимости.</p><span class="proc__more">План лечения</span></a>
+            <a class="proc__card proc__card--featured" href="services.html"><span class="proc__num">01</span><span class="proc__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M16 9c-6-2-10 2-10 8 0 5 3 9 4 15 1 6 4 8 6 3l3-8c1-3 3-3 4 0l3 8c2 5 5 3 6-3 1-6 4-10 4-15 0-6-4-10-10-8-4 1-6 1-10 0Z"/><path d="M39 5v10m-5-5h10"/></svg></span><h3 class="proc__name">Лечение зубов</h3><p class="proc__text">Лечение кариеса, каналов и дёсен под увеличением.</p><span class="proc__more">Под увеличением</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">02</span><span class="proc__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m12 35 16-16 5 5-16 16a3.5 3.5 0 0 1-5-5Z"/><path d="m28 19 5-5 7 7-7 7M34 15l4-4m-1 7 4-4m-1 7 4-4M13 8v8m-4-4h8M24 5v4m-2-2h4"/></svg></span><h3 class="proc__name">Гигиена и отбеливание</h3><p class="proc__text">Гигиена Air Flow, полировка и бережное отбеливание.</p><span class="proc__more">Air Flow + NSK</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">03</span><span class="proc__icon proc__icon--braces" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M7 16c9-5 25-5 34 0M7 33c9 5 25 5 34 0M5 24h38"/><rect x="9" y="19" width="7" height="10" rx="2"/><rect x="21" y="19" width="7" height="10" rx="2"/><rect x="33" y="19" width="7" height="10" rx="2"/></svg></span><h3 class="proc__name">Исправление прикуса</h3><p class="proc__text">Брекеты и элайнеры для детей и взрослых. Цифровой 3D-план.</p><span class="proc__more">Брекеты и элайнеры</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">04</span><span class="proc__icon proc__icon--surgery" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="m25 25 14-14a4 4 0 0 0-6-6L19 19Zm-6-6L7 31c-4 4-4 9-4 12 3 0 8 0 12-4l12-12M30 11l6 6M9 36l11-11"/></svg></span><h3 class="proc__name">Хирургическая стоматология</h3><p class="proc__text">Удаление зубов, включая зубы мудрости.</p><span class="proc__more">Удаление зубов</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">05</span><span class="proc__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M15 20V12c0-5 4-7 9-7s9 2 9 7v8ZM18 20v17l6 7 6-7V20M18 25l12-3m-12 10 12-3m-10 10 10-3M10 20h28"/></svg></span><h3 class="proc__name">Имплантация</h3><p class="proc__text">Имплантация, «всё на 4» и «всё на 6», костная пластика.</p><span class="proc__more">Варианты имплантации</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">06</span><span class="proc__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M10 34 7 14l10 6 7-12 7 12 10-6-3 20ZM10 34h28v7H10ZM16 28h16"/></svg></span><h3 class="proc__name">Протезирование</h3><p class="proc__text">Коронки и виниры из собственной лаборатории.</p><span class="proc__more">Коронки и виниры</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">07</span><span class="proc__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M5 23c6-2 10-6 14-6 2 0 4 2 5 2s3-2 5-2c4 0 8 4 14 6-4 10-10 15-19 15S9 33 5 23ZM5 23c10 4 28 4 38 0M13 26c2 5 6 7 11 7s9-2 11-7M36 6v8m-4-4h8"/></svg></span><h3 class="proc__name">Эстетическая стоматология</h3><p class="proc__text">Реставрация с естественной формой и оттенком зубов.</p><span class="proc__more">Эстетика улыбки</span></a>
+            <a class="proc__card" href="services.html"><span class="proc__num">08</span><span class="proc__icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="13"/><path d="m31 31 11 11M15 21h12m-6-6v12"/></svg></span><h3 class="proc__name">Диагностика</h3><p class="proc__text">Осмотр, фотопротокол и 3D-снимки по показаниям.</p><span class="proc__more">План лечения</span></a>
           </div>
         </div>
-      </div>
+      <div class="dirs__footer"><span class="dirs__pagination" aria-label="Видимые направления"><span data-dir-first>01</span><i aria-hidden="true"></i><span data-dir-last>04</span></span></div></div>
     </section>
 
     <section class="about section surf surf--noir" id="about">
       <div class="shell about__grid">
-        <figure class="about__media reveal" data-lightbox="assets/images/team.jpg">
-          <img src="assets/images/team.jpg" alt="Команда клиники Арт-Ник в фирменной одежде" width="1280" height="853" loading="lazy">
+        <figure class="about__media reveal" data-lightbox="assets/images/XXXL (11).webp">
+          <img src="assets/images/XXXL (11).webp" alt="Сотрудница клиники Арт-Ник в стоматологическом кабинете" width="1280" height="853" loading="lazy">
         </figure>
         <div class="about__copy reveal">
           <p class="eyebrow">О клинике</p>
@@ -131,23 +111,7 @@
           <div><p class="eyebrow">Пространство</p><h2 class="h2">Клиника <em>изнутри</em></h2></div>
           <p class="head__lead">Белые стены и мрамор, бордовые панели, тёплый свет. Кабинеты — с креслами премиум-класса и потолочными телевизорами.</p>
         </div>
-        <div class="wslider reveal" data-slider>
-          <div class="wslider-track">
-            <figure class="wslide"><img src="assets/images/XXXL (21).webp" alt="Ресепшен клиники Арт-Ник с фирменной стеной" loading="lazy"><figcaption>Ресепшен</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (3).webp" alt="Зона ожидания клиники Арт-Ник" loading="lazy"><figcaption>Зона ожидания</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (7).webp" alt="Холл клиники Арт-Ник" loading="lazy"><figcaption>Холл</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (4).webp" alt="Лечебный кабинет с бордовым креслом и потолочным телевизором" loading="lazy"><figcaption>Лечебный кабинет</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (5).webp" alt="Светлый лечебный кабинет клиники Арт-Ник" loading="lazy"><figcaption>Кабинет</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (6).webp" alt="Рабочая зона стоматологического кабинета" loading="lazy"><figcaption>Оснащение кабинета</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (10).webp" alt="Уютная зона ожидания с телевизором" loading="lazy"><figcaption>Комфортное ожидание</figcaption></figure>
-            <figure class="wslide"><img src="assets/images/XXXL (9).webp" alt="Наклейка награды Хорошее место 2026 на входе в клинику" loading="lazy"><figcaption>«Хорошее место» — 4 года подряд</figcaption></figure>
-          </div>
-          <button class="wslider-arrow prev" type="button" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
-          <button class="wslider-arrow next" type="button" aria-label="Следующее фото"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
-          <div class="wslider-dots"></div>
-        </div>
-      </div>
-    </section>
+        <div class="clinic-carousel" data-clinic-carousel><div class="clinic-carousel__viewport" tabindex="0" aria-label="Фотогалерея клиники, по две фотографии на слайде"><div class="clinic-carousel__pair" role="group" aria-label="1 из 4"><figure><button type="button" data-lightbox="assets/images/XXXL (21).webp" aria-label="Открыть фото: Ресепшен"><img src="assets/images/XXXL (21).webp" alt="Ресепшен клиники Арт-Ник с фирменной стеной" loading="lazy"></button><figcaption>Ресепшен</figcaption></figure><figure><button type="button" data-lightbox="assets/images/XXXL (3).webp" aria-label="Открыть фото: Зона ожидания"><img src="assets/images/XXXL (3).webp" alt="Зона ожидания клиники Арт-Ник" loading="lazy"></button><figcaption>Зона ожидания</figcaption></figure></div><div class="clinic-carousel__pair" role="group" aria-label="2 из 4"><figure><button type="button" data-lightbox="assets/images/XXXL (7).webp" aria-label="Открыть фото: Холл"><img src="assets/images/XXXL (7).webp" alt="Холл клиники Арт-Ник" loading="lazy"></button><figcaption>Холл</figcaption></figure><figure><button type="button" data-lightbox="assets/images/XXXL (4).webp" aria-label="Открыть фото: Лечебный кабинет"><img src="assets/images/XXXL (4).webp" alt="Лечебный кабинет с бордовым креслом и потолочным телевизором" loading="lazy"></button><figcaption>Лечебный кабинет</figcaption></figure></div><div class="clinic-carousel__pair" role="group" aria-label="3 из 4"><figure><button type="button" data-lightbox="assets/images/XXXL (5).webp" aria-label="Открыть фото: Кабинет"><img src="assets/images/XXXL (5).webp" alt="Светлый лечебный кабинет клиники Арт-Ник" loading="lazy"></button><figcaption>Кабинет</figcaption></figure><figure><button type="button" data-lightbox="assets/images/XXXL (6).webp" aria-label="Открыть фото: Оснащение кабинета"><img src="assets/images/XXXL (6).webp" alt="Рабочая зона стоматологического кабинета" loading="lazy"></button><figcaption>Оснащение кабинета</figcaption></figure></div><div class="clinic-carousel__pair" role="group" aria-label="4 из 4"><figure><button type="button" data-lightbox="assets/images/XXXL (10).webp" aria-label="Открыть фото: Комфортное ожидание"><img src="assets/images/XXXL (10).webp" alt="Уютная зона ожидания с телевизором" loading="lazy"></button><figcaption>Комфортное ожидание</figcaption></figure><figure><button type="button" data-lightbox="assets/images/XXXL (9).webp" aria-label="Открыть фото: «Хорошее место» — 4 года подряд"><img src="assets/images/XXXL (9).webp" alt="Наклейка награды Хорошее место 2026 на входе в клинику" loading="lazy"></button><figcaption>«Хорошее место» — 4 года подряд</figcaption></figure></div></div><div class="clinic-carousel__controls"><button data-clinic-prev aria-label="Предыдущая пара фотографий">←</button><span data-clinic-count>01 / 04</span><button data-clinic-next aria-label="Следующая пара фотографий">→</button></div></div></div></section>
 
     <section class="cases section surf surf--white" id="cases">
       <div class="shell">
@@ -244,14 +208,7 @@
           </div>
         </div>
         <a class="link" href="https://yandex.ru/maps/org/art_nik/171912213700/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах <span>↗</span></a>
-        <div class="guests reveal">
-          <span class="guests__pics">
-            <img src="assets/images/guest-1.jpg" alt="Гостья клиники «Арт-Ник»" width="120" height="120" loading="lazy">
-            <img src="assets/images/guest-2.jpg" alt="Гостья клиники «Арт-Ник»" width="120" height="120" loading="lazy">
-            <img src="assets/images/guest-3.jpg" alt="Гостья клиники «Арт-Ник»" width="120" height="120" loading="lazy">
-          </span>
-          <span>«Хорошее место» на Яндекс Картах — четыре года подряд</span>
-        </div>
+        <div class="review-award"><span class="review-award__icon" aria-hidden="true">☆</span><span><b>Хорошее место</b><small>Яндекс Карты · четыре года подряд</small></span></div>
       </div>
     </section>
 
