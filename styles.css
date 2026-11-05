@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
-/* Арт-Ник — контраст: тёмно-красный + белый + золото */
+/* Дента — контраст: тёмно-красный + белый + золото */
 
 :root {
   /* Поверхности */
@@ -259,7 +259,7 @@ p { margin: 0; }
 .about__facts li { position: relative; padding: 14px 0 14px 22px; border-bottom: 1px solid rgba(255,255,255,.16); font-size: 13.5px; }
 .about__facts li::before { content: "+"; position: absolute; left: 0; color: var(--gold); }
 
-/* ---------- Почему «Арт-Ник» ---------- */
+/* ---------- Почему «Дента» ---------- */
 .why__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--marble); border: 1px solid var(--marble); border-radius: 16px; overflow: hidden; }
 .why__card { padding: clamp(28px, 3vw, 38px); background: var(--paper-pure); }
 .why__card > span { font: 700 11px/1 Manrope, sans-serif; letter-spacing: .14em; color: var(--gold-ink); }

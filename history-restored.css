@@ -187,3 +187,6 @@ html,body,.nav { scrollbar-color: #85062e #f4ebe8; scrollbar-width: thin; }
   body .consult__list { grid-template-columns: 1fr; }
   .dirs .proc__card { flex-basis: min(82vw,290px); }
 }
+
+.map__placeholder { min-height: 360px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f2e9e6; color: #3f0f1b; text-align: center; padding: 32px; }
+.map__placeholder > span { font: 48px Georgia, serif; }

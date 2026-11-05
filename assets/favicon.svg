@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#3f0f1b"/>
-  <g transform="translate(14 7) scale(.08) translate(-205 -190)" fill="none" stroke="#e0c483" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M214 558 514 203Q522 195 516 213L376 610"/>
-    <path d="M270 403 550 358"/>
-    <path d="M376 610Q467 458 589 400Q651 369 635 457Q608 595 510 830"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#3f0f1b"/><text x="32" y="46" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#e0c483">Д</text></svg>

@@ -1,6 +1,6 @@
 /* Show on site entry or reload, but never on internal navigation or Back. */
 (() => {
-  const transitionKey = 'artnik-internal-transition';
+  const transitionKey = 'denta-internal-transition';
   let clickedInside = false;
   try {
     const saved = JSON.parse(sessionStorage.getItem(transitionKey) || 'null');
